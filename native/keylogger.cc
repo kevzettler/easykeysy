@@ -9,7 +9,6 @@ using namespace node;
 
 struct Emitter: ObjectWrap {
   static Handle<Value> New(const Arguments& args);
-  static Handle<Value> Emit(const Arguments& args);
   static CGEventRef myCGEventCallback (CGEventTapProxy, CGEventType, CGEventRef, void *);
 };
 
