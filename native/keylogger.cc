@@ -58,13 +58,8 @@ CGEventRef Emitter::myCGEventCallback (CGEventTapProxy proxy, CGEventType type, 
 
   v8::Arguments* args = static_cast<v8::Arguments *>(refcon);
   
-  // Call self in here?
-  // self->MakeCallBack
-  // self->Emit
+
   MakeCallback(args->This(), "emit", 2, neat);
-  //fun->Call(Context::GetCurrent()->Global(), 2, neat);
-  //t.MakeCallback(t, "emit", 2, neat);
-  //MakeCallback(args.This(_, "emit", 2, neat);
   return event;
 };
 
